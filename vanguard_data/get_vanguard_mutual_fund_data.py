@@ -33,7 +33,7 @@ def get_csv_data(symbol, start_date, end_date):
     return csv_data
 
 if __name__ == '__main__':
-    start_date = '2000-01-01'
+    start_date = '1990-01-01'
     end_date = datetime.datetime.today().strftime('%Y-%m-%d')  # Today's date
     vanguard_mutual_fund_symbols = [line.strip() for line in open('vanguard_mutual_funds.txt', 'r').readlines()]
 
